@@ -1,0 +1,15 @@
+{
+    "name": "larakit/sf-angular-quilljs",
+    "description": "[Larakit] [staticfiles] sf-angular-quilljs wysiwyg",
+    "version": "1.5.9",
+    "license": "MIT",
+    "require":{
+        "larakit/sf-quilljs": "*",
+        "larakit/sf-angular":"*"
+    },
+    "autoload": {
+        "files": [
+            "init.php"
+        ]
+    }
+}
