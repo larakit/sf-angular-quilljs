@@ -6,6 +6,7 @@ angular
         bindings: {
             error: '=',
             desc: '=',
+            examples: '=',
             frmLabel: '=',
             max: '=',
             min: '=',
@@ -14,7 +15,17 @@ angular
             cssClass: '='
         },
         controller: function () {
-            !this.theme ? this.theme = 'snow' : this.theme;
-            !this.cssClass ? this.cssClass = 'default' : this.cssClass;
+            var self = this;
+            self.preparedExamples = [];
+            if (undefined != self.examples) {
+                var title, value;
+                _.each(self.examples, function (v, k) {
+                    value = v[0];
+                    title = (undefined !== v[1]) ? v[1] : value;
+                    self.preparedExamples.push({value: value, title: title});
+                });
+            }
+            !self.theme ? self.theme = 'snow' : self.theme;
+            !self.cssClass ? self.cssClass = 'default' : self.cssClass;
         }
     });
