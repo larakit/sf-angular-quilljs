@@ -1,8 +1,10 @@
 <?php
 \Larakit\StaticFiles\Manager::package('larakit/sf-angular-quilljs')
     ->usePackage('larakit/sf-quilljs')
-    ->usePackage('larakit/sf-angular')
+    ->usePackage('larakit/sf-angular-larakit')
     ->ngModule('ngQuill')
     ->setSourceDir('public')
     ->jsPackage('ng-quill.min.js')
+    ->cssPackage('larakit.form/formfield-quill.css')
+    ->jsPackage('larakit.form/formfield-quill.js')
 ;
