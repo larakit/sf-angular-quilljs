@@ -1,5 +1,8 @@
 angular
-    .module('larakit.form')
+    .module('larakit.form.quill', ['ngQuill']);
+
+angular
+    .module('larakit.form.quill')
     .component('formfieldQuill', {
         templateUrl: '/packages/larakit/sf-angular-quilljs/larakit.form/formfield-quill.html',
         transclude: true,
