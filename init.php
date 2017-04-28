@@ -4,6 +4,4 @@
     ->usePackage('larakit/sf-angular')
     ->setSourceDir('public')
     ->jsPackage('ng-quill.min.js')
-    ->cssPackage('larakit.form/formfield-quill.css')
-    ->jsPackage('larakit.form/formfield-quill.js')
 ;
